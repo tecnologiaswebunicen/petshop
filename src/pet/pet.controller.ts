@@ -9,6 +9,7 @@ export class PetController {
 
   @Post()
   create(@Body() createPetDto: CreatePetDto) {
+    console.log('test');
     return this.petService.create(createPetDto);
   }
 
